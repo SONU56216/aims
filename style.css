@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #1e40af;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #2563eb, #1e40af);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Sections */
+.section {
+    padding: 50px 60px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: #1e40af;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #e0e7ff;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background: #1e40af;
+    color: white;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.gallery img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Faculty */
+.faculty-card {
+    text-align: center;
+}
+
+.faculty-card img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px;
+        display: inline-block;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section {
+        padding: 40px 30px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .section {
+        margin: 10px;
+        padding: 30px 20px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    .faculty-card img {
+        width: 120px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
